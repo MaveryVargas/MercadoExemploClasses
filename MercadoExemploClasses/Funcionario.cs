@@ -17,11 +17,18 @@ namespace MercadoExemploClasses
         int senha {get;set;}
         public Funcionario()
         {
-            this.nome = "";
-            this.sobrenome = "";
-            this
+            this.nome = string.Empty;
+            this.sobrenome = string.Empty;            
         }
-       
+
+        public Funcionario(string nome, string sobrenome, int idfunc, int senha)
+        {
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+            this.idfunc = idfunc;
+            this.senha = senha;
+        }
+
         public void CadastraFuncionario()
         {
             Console.WriteLine("Insira o nome do novo funcionario");

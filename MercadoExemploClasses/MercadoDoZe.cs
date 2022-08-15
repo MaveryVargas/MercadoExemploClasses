@@ -17,28 +17,33 @@ namespace MercadoExemploClasses
         }
         public static void Menu()
         {
-            Funcionario func = new Funcionario();
             int opc = 0;
-            Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-Menu+-+-+-+-+-+-+-+-+-+-+-+-");
-            Console.WriteLine("1-Cadastrar funcionario");
-            Console.WriteLine("2-Buscar funcionario");
-            Console.WriteLine("3-Cadastrar Cliente");
-            Console.WriteLine("4-Buscar cliente");
-            Console.WriteLine("5-Inserir um produto");
-            Console.WriteLine("6-Retirar produto");
-            Console.WriteLine("7-Buscar Produto");
-            Console.WriteLine("0-Sair");
-            Console.WriteLine("Digite a opção");
-            Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-Menu+-+-+-+-+-+-+-+-+-+-+-+-");
-            opc = Convert.ToInt16(Console.ReadLine());
-            
-            switch(opc)
+            do
             {
-                case 1: func.CadastraFuncionario();
+                Funcionario func = new Funcionario();
+                Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-Menu+-+-+-+-+-+-+-+-+-+-+-+-");
+                Console.WriteLine("1-Cadastrar funcionario");
+                Console.WriteLine("2-Buscar funcionario");
+                Console.WriteLine("3-Cadastrar Cliente");
+                Console.WriteLine("4-Buscar cliente");
+                Console.WriteLine("5-Inserir um produto");
+                Console.WriteLine("6-Retirar produto");
+                Console.WriteLine("7-Buscar Produto");
+                Console.WriteLine("0-Sair");
+                Console.WriteLine("Digite a opção");
+                Console.WriteLine("-+-+-+-+-+-+-+-+-+-+-Menu+-+-+-+-+-+-+-+-+-+-+-+-");
+                opc = Convert.ToInt16(Console.ReadLine());
+
+                switch (opc)
+                {
+                    case 1:
+                        func.CadastraFuncionario();
                         Menu();
-                    break;
-                //case 2:
-            }
+                        break;
+                        //case 2:
+                }
+            } while (opc != 0);
+            
         }
         public void BuscarFuncionario() //ForEach in Lengt
         {
