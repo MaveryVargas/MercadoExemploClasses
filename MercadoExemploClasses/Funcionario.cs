@@ -35,7 +35,7 @@ namespace MercadoExemploClasses
             nome = Console.ReadLine();
             Console.WriteLine("Insira o sobrenome do novo funcionario");
             sobrenome = Console.ReadLine();
-            Console.WriteLine("Cadastre uma senha");
+            Console.WriteLine("Cadastre uma senha numerica");
             senha = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Digite um ID para o funcionario");
             idfunc = Convert.ToInt32(Console.ReadLine());

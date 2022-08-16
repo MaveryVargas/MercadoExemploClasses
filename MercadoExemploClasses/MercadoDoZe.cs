@@ -17,7 +17,7 @@ namespace MercadoExemploClasses
         }
         public static void Menu()
         {
-            int opc = 0;
+            int opc = 0;            
             do
             {
                 Funcionario func = new Funcionario();
@@ -37,17 +37,20 @@ namespace MercadoExemploClasses
                 switch (opc)
                 {
                     case 1:
-                        func.CadastraFuncionario();
-                        Menu();
+                        func.CadastraFuncionario();                        
                         break;
                         //case 2:
                 }
             } while (opc != 0);
             
         }
-        public void BuscarFuncionario() //ForEach in Lengt
+        public List<Funcionario> BuscarFuncionario() //ForEach in Lengt
         {
+            List<Funcionario> listaFunc = new List<Funcionario>();
+            // Aqui você implementa a sua solução.
+            // Indico usar um parametro global para salvar todo funcionario cadastrado
 
+            return listaFunc;
         }
     
     }
